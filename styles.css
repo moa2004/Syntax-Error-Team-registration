@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #1e272e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #ecf0f1;
+}
+
+.container {
+    background: #2f3640;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    animation: fadeIn 1s forwards, slideIn 1s forwards;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f1c40f;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    animation: slideIn 1s forwards;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 16px;
+    background: #57606f;
+    color: #ecf0f1;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+}
+
+.form-group input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2);
+}
+.imgg{
+    display: flex;
+    margin-left: 100px;
+
+}
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 10px;
+    color: #2f3640;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
